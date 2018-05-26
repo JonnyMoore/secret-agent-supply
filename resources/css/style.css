@@ -33,6 +33,11 @@ header img {
   padding-right: 10px;
 }
 
+header span {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
 .hero {
   height: 30rem;
   padding-top: 1rem;
