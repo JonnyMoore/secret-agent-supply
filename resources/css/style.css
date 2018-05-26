@@ -1,3 +1,5 @@
+/* Global styling */
+
 html,
 body {
   font-family: "Helvetica", sans-serif;
@@ -23,43 +25,30 @@ h2 {
   margin: 0 auto;
 }
 
+/* Header Section */
+
 header {
   font-size: 1rem;
 }
 
-header img {
-  text-align: right;
-  flex-grow: 1;
-  padding-right: 10px;
+.company {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-header span {
-  font-size: 1rem;
+.company span {
   text-transform: uppercase;
-}
-
-.hero {
-  height: 30rem;
-  padding-top: 1rem;
-  background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg');
-  background-size: cover;
-}
-
-.title-box{
-  background-color: Black;
-}
-
-.company.container {
   padding: 0.66rem 0;
 }
 
 .company img {
-  height: 1.5rem;
   padding-left: 0.5rem;
-  padding-right: 1rem
+  padding-right: 1rem;
+  height: 1.5rem;
 }
 
-/*Main Banner*/
 .hero {
   background-image: url("../images/moto.jpeg");
   background-size: cover;
@@ -68,12 +57,12 @@ header span {
   height: 25rem;
 }
 
-.hero .title-box {
+.title-box {
+  background-color: black;
   width: 20rem;
   padding: 2rem 3rem;
   position: relative;
   top: 9rem;
-
 }
 
 /*Navigation*/
