@@ -8,15 +8,20 @@ body {
   color: white;
 }
 
-h1{
+h1 {
   font-size: 2rem;
   font-weight: bold;
   margin: 0.25rem 0;
 }
 
-h2 {
-  font-size: 1rem;
-  font-weight: bold;
+@media only screen and (max-width: 470px) {
+  h1 {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 0.77rem;
+  }
 }
 
 .container {
@@ -57,12 +62,24 @@ header {
   height: 25rem;
 }
 
+@media only screen and (max-width: 470px) {
+  .hero {
+    height: 15rem;
+  }
+}
+
 .title-box {
   background-color: black;
   width: 20rem;
   padding: 2rem 3rem;
   position: relative;
   top: 9rem;
+}
+
+@media only screen and (max-width: 470px) {
+  .title-box {
+    padding: 1rem 2rem;
+  }
 }
 
 /* Main Nav */
@@ -75,6 +92,21 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding: 0.75rem 0;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 470px) {
+  nav ul {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
 }
 
 nav a {
@@ -95,6 +127,27 @@ nav a {
   width: 30%;
 }
 
+@media only screen and (max-width: 1024px) {
+  .col{
+    width: 47%;
+  }
+
+  .glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .col{
+    width: 90%;
+    margin: auto;
+  }
+
+  .watch {
+    display: none;
+  }
+}
+
 .col p {
   background-color: black;
   padding: 0.5rem 0;
@@ -107,9 +160,73 @@ nav a {
   align-items: center;
   height: 9rem;
   padding: 2rem 0;
-  border: 4px solid black;
+  border-top: 4px solid black;
+  border-right: 4px solid black;
+  border-left: 4px solid black;
 }
 
 .product-image img {
   max-width: 8rem;
+}
+
+.products p {
+  padding: 0.5rem 0;
+}
+
+/* Business Section */
+
+.business-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+@media only screen and (max-width: 470px) {
+  .business-info {
+    flex-wrap: wrap;
+  }
+}
+
+.business-box {
+  width: 35%;
+}
+
+@media only screen and (max-width: 470px) {
+  .business-box {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+}
+
+.business-box p {
+  display: block;
+  padding: 1rem 2rem;
+  background-color: black;
+}
+
+.business-box span {
+  color: #777;
+}
+
+@media only screen and (max-width: 470px) {
+  .business-box span {
+    margin-top: : 0.5rem;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  margin-top: 4rem;
+  padding: 5rem 0;
+}
+
+footer p {
+  text-align: left;
+}
+
+@media only screen and (max-width: 470px) {
+  footer p {
+    text-align: center;
+  }
 }
